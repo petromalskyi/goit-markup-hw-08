@@ -5,6 +5,12 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: $title-text-color;
@@ -25,14 +31,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  // margin-bottom: -30px;
 
   &__item {
     margin-left: 30px;
     margin-bottom: 30px;
 
     background-color: $special-text-color;
-    flex-basis: calc((100% - $mobile_col * 30px) / $mobile_col );
+    flex-basis: calc((100% - $mobile_col * 30px) / $mobile_col);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -70,8 +76,8 @@
 
   @media screen and (min-width: $tablet) {
     &__item {
-        flex-basis: calc((100% - $tablet_col * 30px) / $tablet_col );
-        &:nth-last-child(-n + 2) {
+      flex-basis: calc((100% - $tablet_col * 30px) / $tablet_col);
+      &:nth-last-child(-n + 2) {
         margin-bottom: 0;
       }
     }
@@ -79,7 +85,7 @@
 
   @media screen and (min-width: 1200px) {
     &__item {
-      flex-basis: calc( (100% - $desctop_col * 30px) / $desctop_col );
+      flex-basis: calc((100% - $desctop_col * 30px) / $desctop_col);
       margin-bottom: 0;
     }
   }

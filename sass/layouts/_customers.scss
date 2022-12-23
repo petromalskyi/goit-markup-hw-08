@@ -6,6 +6,11 @@
   line-height: 1.18;
   text-align: center;
   color: $title-text-color;
+  @media screen and (min-width: $desktop) {
+            margin-bottom: 50px;
+              font-size: 36px;
+              line-height: 1.17;
+  }
 }
 
 .customers-list {
@@ -78,20 +83,17 @@
   }
 
   @media screen and (min-width: $desktop) {
+
     .customers-list {
       max-width: $desktop;
       &__link {
         max-width: 170px;
       }
       &__item {
-        flex-basis: calc(($desktop - (7 * 30px)) / 6);
+        flex-basis: calc(($desktop - (6 * 30px)) / 6);
         margin-bottom: 0;
       }
-      .customers__title {
-        margin-bottom: 50px;
-        font-size: 36px;
-        line-height: 1.17;
-      }
+
     }
   }
 }

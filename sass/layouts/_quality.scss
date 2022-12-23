@@ -2,7 +2,6 @@
 @import '../base/hiden';
 
 .quality-list {
-  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -15,14 +14,14 @@
   }
   &__icon {
     display: flex;
+     // margin-top: 25px; 
+    margin-bottom: 30px;  
     height: 120px;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
     background: #f5f4fa;
     border-radius: 4px;
-    margin-bottom: 30px;
+   
   }
 
   &__title {

@@ -1,22 +1,22 @@
 /* -----FOOTER----- */
 .footer {
-  max-width: 1600px;
+  // max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $bg-color;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 1199px) {
-    width: $tablet;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   width: $tablet;
+  // }
 
-  @media screen and (max-width: 767px) {
-    width: $mobile;
-  }
+  // @media screen and (max-width: 767px) {
+  //   width: $mobile;
+  // }
 
-  @media screen and (max-width: 479px) {
-    width: 100%;
-  }
+  // @media screen and (max-width: 479px) {
+  //   width: 100%;
+  // }
 }
 
 .footer-container {
@@ -41,8 +41,6 @@
     margin-bottom: 60px;
   }
 }
-
-
 
 .footer__logo {
   display: block;
@@ -81,7 +79,7 @@
 }
 
 .address-list__link {
-  color: var(--footer-link);
+  color: $footer-link-color;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;

@@ -7,17 +7,20 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: calc(60/44);
+  }
 }
 
 .hero-section {
-
- 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   width: 100%;
    text-align: center;
   color: $special-text-color;
-  margin: 0 auto;
+   margin-left: auto;
+   margin-right: auto;
   max-width: $mobile;
   background-image: linear-gradient(
       to right,
@@ -80,16 +83,13 @@
       ),
       url(../images/desktop.jpg);
   }
-
-  .container .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
 }
 
 @media screen and (min-width: $desktop) {
   .hero-section {
     max-width: 1600px;
+    padding-top: 200px;
+      padding-bottom: 200px;
   }
 }
 

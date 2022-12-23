@@ -1,7 +1,7 @@
 /* ------- HEADER -------- */
 
 .page-header {
-  max-width: 1600px;
+  // max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: $special-text-color;
@@ -65,11 +65,9 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-    display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  // padding-left: 40px;
-  // padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $special-text-color;
   z-index: 999;
 
@@ -79,7 +77,6 @@
 
 .menu-container.is-open {
   transform: translateX(0);
-
 }
 
 .menu-container .menu-button {
@@ -87,14 +84,11 @@
   top: 10px;
   right: 15px;
   color: $special-text-color;
-
 }
 
 .mobile-menu {
-  
   padding: 0;
   margin: 0;
-
 }
 
 .mobile-menu .link {
@@ -104,7 +98,7 @@
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
-   color: $title-text-color;
+  color: $title-text-color;
 }
 
 .mobile-menu .link:hover,
@@ -118,7 +112,7 @@
 }
 
 .mobile-menu__item:last-child {
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .icon-close:hover {
@@ -127,7 +121,7 @@
 
 .mobile-tel {
   display: block;
-   margin-bottom: 32px;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
@@ -157,7 +151,6 @@
 .mobile-social {
   display: flex;
   flex-wrap: wrap;
-
 
   &__item {
     padding-right: 10px;
@@ -250,6 +243,7 @@
   &__item:not(:last-child) {
     margin-bottom: 10px;
   }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     &__item:not(:last-child) {
@@ -268,6 +262,14 @@
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: $tablet) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+    @media screen and(min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 
   &__icon {
