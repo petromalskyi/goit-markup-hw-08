@@ -215,6 +215,11 @@ body {
 .mobile-menu__item {
   margin-bottom: 32px;
 }
+@media screen and (max-height: 700px) {
+  .mobile-menu__item {
+    margin-bottom: 0px;
+  }
+}
 
 .mobile-menu__item:last-child {
   margin-bottom: 0;
@@ -279,8 +284,6 @@ body {
   .site-nav__item {
     display: none;
   }
-}
-@media (max-width: 767px) {
   .contact-nav__item {
     display: none;
   }
