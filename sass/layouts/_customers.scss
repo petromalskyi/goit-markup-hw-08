@@ -6,18 +6,17 @@
   line-height: 1.18;
   text-align: center;
   color: $title-text-color;
-  @media screen and (min-width: $desktop) {
+    @include desktop{
             margin-bottom: 50px;
-              font-size: 36px;
-              line-height: 1.17;
-  }
+                font-size: 36px;
+                line-height: 1.17;
+      }
 }
 
 .customers-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-
 
   &__link {
     display: flex;
@@ -51,7 +50,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $mobile) {
+  @include mobile {
     .customers-list {
       max-width: $mobile;
 
@@ -67,7 +66,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     .customers-list {
       max-width: $tablet;
       &__link {
@@ -82,8 +81,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
-
+    @include desktop {
     .customers-list {
       max-width: $desktop;
       &__link {

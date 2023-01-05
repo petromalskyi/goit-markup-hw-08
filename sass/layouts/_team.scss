@@ -7,7 +7,7 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and(min-width: $desktop) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -19,7 +19,7 @@
     line-height: 1.18;
     text-align: center;
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       font-size: 36px;
       line-height: 1.17;
       margin-bottom: 50px;
@@ -31,7 +31,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  // margin-bottom: -30px;
 
   &__item {
     margin-left: 30px;
@@ -51,7 +50,7 @@
     padding-top: 30px;
     padding-bottom: 24px;
     width: 100%;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       padding-bottom: 30px;
     }
   }
@@ -74,7 +73,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     &__item {
       flex-basis: calc((100% - $tablet_col * 30px) / $tablet_col);
       &:nth-last-child(-n + 2) {
@@ -83,7 +82,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     &__item {
       flex-basis: calc((100% - $desctop_col * 30px) / $desctop_col);
       margin-bottom: 0;

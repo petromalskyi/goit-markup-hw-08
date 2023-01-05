@@ -1,27 +1,16 @@
 /* -----FOOTER----- */
 .footer {
-  // max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $bg-color;
   margin-left: auto;
   margin-right: auto;
-  // @media screen and (max-width: 1199px) {
-  //   width: $tablet;
-  // }
 
-  // @media screen and (max-width: 767px) {
-  //   width: $mobile;
-  // }
-
-  // @media screen and (max-width: 479px) {
-  //   width: 100%;
-  // }
 }
 
 .footer-container {
   width: 100%;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     .footer-tablet {
       display: flex;
@@ -50,7 +39,7 @@
   color: $special-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: left;
   }
 }
@@ -64,7 +53,7 @@
 .address-footer {
   width: 100%;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+    @include desktop {
     width: 231px;
     text-align: left;
   }
@@ -100,7 +89,7 @@
   display: block;
 
   height: 80px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 206px;
     margin-top: 12px;
     margin-left: 70px;
@@ -128,7 +117,7 @@
 }
 
 .icon-list--footer {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: 0;
     margin-right: 0;
   }
@@ -146,12 +135,13 @@
 .footer-form {
   margin: 0;
   padding: 0;
-  @media screen and (min-width: 1200px) {
-    margin-left: 80px;
+  width: auto;
+  @include desktop {
+    margin-left: 94px;
     margin-top: 12px;
   }
 
-  width: auto;
+ 
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
@@ -167,7 +157,7 @@
 }
 
 .footer-field {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
   }
 

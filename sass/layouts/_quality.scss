@@ -38,7 +38,8 @@
     line-height: 1.71;
   }
 
-  @media screen and (min-width: $mobile) {
+
+  @include mobile {
     .quality-list {
       max-width: $mobile;
       &__item:last-child {
@@ -47,7 +48,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+    @include tablet {
     .quality-list {
       max-width: $tablet;
 
@@ -63,7 +64,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     .quality-list {
       max-width: $desktop;
     &__item {

@@ -7,7 +7,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     font-size: 44px;
     line-height: calc(60/44);
   }
@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
+  @include mobile {
   .hero-section {
     max-width: $mobile;
     background-image: linear-gradient(
@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (min-width: $tablet) {
+  @include tablet{
   .hero-section {
     max-width: $tablet;
     background-image: linear-gradient(
@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
+  @include desktop {
   .hero-section {
     max-width: 1600px;
     padding-top: 200px;
